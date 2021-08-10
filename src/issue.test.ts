@@ -43,8 +43,10 @@ describe('Issue', () => {
         name: blogName,
         creator: {
           create: {
-            email: userEmail,
-            password: userPassword,
+            node: {
+              email: userEmail,
+              password: userPassword,
+            },
           },
         },
       },

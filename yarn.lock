@@ -1242,7 +1242,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@graphql-tools/merge@npm:^6.0.0, @graphql-tools/merge@npm:^6.2.12, @graphql-tools/merge@npm:^6.2.13, @graphql-tools/merge@npm:^6.2.14":
+"@graphql-tools/merge@npm:6.2.14, @graphql-tools/merge@npm:^6.0.0, @graphql-tools/merge@npm:^6.2.12, @graphql-tools/merge@npm:^6.2.14":
   version: 6.2.14
   resolution: "@graphql-tools/merge@npm:6.2.14"
   dependencies:
@@ -1310,7 +1310,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@graphql-tools/schema@npm:^7.0.0, @graphql-tools/schema@npm:^7.1.3, @graphql-tools/schema@npm:^7.1.5":
+"@graphql-tools/schema@npm:^7.0.0, @graphql-tools/schema@npm:^7.1.5":
   version: 7.1.5
   resolution: "@graphql-tools/schema@npm:7.1.5"
   dependencies:
@@ -1352,7 +1352,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@graphql-tools/utils@npm:^7.0.0, @graphql-tools/utils@npm:^7.1.0, @graphql-tools/utils@npm:^7.1.2, @graphql-tools/utils@npm:^7.5.0, @graphql-tools/utils@npm:^7.7.0, @graphql-tools/utils@npm:^7.7.1, @graphql-tools/utils@npm:^7.8.1, @graphql-tools/utils@npm:^7.9.0, @graphql-tools/utils@npm:^7.9.1":
+"@graphql-tools/utils@npm:^7.0.0, @graphql-tools/utils@npm:^7.1.0, @graphql-tools/utils@npm:^7.1.2, @graphql-tools/utils@npm:^7.10.0, @graphql-tools/utils@npm:^7.5.0, @graphql-tools/utils@npm:^7.7.0, @graphql-tools/utils@npm:^7.7.1, @graphql-tools/utils@npm:^7.8.1, @graphql-tools/utils@npm:^7.9.0, @graphql-tools/utils@npm:^7.9.1":
   version: 7.10.0
   resolution: "@graphql-tools/utils@npm:7.10.0"
   dependencies:
@@ -1647,39 +1647,42 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@neo4j/graphql-ogm@npm:^1.2.2":
-  version: 1.2.2
-  resolution: "@neo4j/graphql-ogm@npm:1.2.2"
+"@neo4j/graphql-ogm@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "@neo4j/graphql-ogm@npm:2.0.0"
   dependencies:
-    "@graphql-tools/merge": ^6.2.13
-    "@neo4j/graphql": ^1.2.2
+    "@graphql-tools/merge": 6.2.14
+    "@neo4j/graphql": ^2.0.0
     camelcase: ^6.2.0
     pluralize: ^8.0.0
   peerDependencies:
     graphql: ^15.0.0
     neo4j-driver: ^4.1.0
-  checksum: d693d018cc8a27c1545df24a416695abd363b636d6fcb74d49b69d01a5b95092e6b88acd53a5a5a1d713e72772ee80391b1ae0f8efd670882a463f2be0b1e42e
+  checksum: 6a9280576b418fbd9025e4809e00bf26afa9c4fb64d96ac71dd9cac946bc730646abbada07f357389709236303503a575f3e60286eded58d5c3f496110c13844
   languageName: node
   linkType: hard
 
-"@neo4j/graphql@npm:^1.2.2":
-  version: 1.2.2
-  resolution: "@neo4j/graphql@npm:1.2.2"
+"@neo4j/graphql@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "@neo4j/graphql@npm:2.0.0"
   dependencies:
-    "@graphql-tools/merge": ^6.2.13
-    "@graphql-tools/schema": ^7.1.3
+    "@graphql-tools/merge": 6.2.14
+    "@graphql-tools/schema": ^7.1.5
+    "@graphql-tools/utils": ^7.10.0
     camelcase: ^6.2.0
-    debug: ^4.3.1
+    debug: ^4.3.2
     deep-equal: ^2.0.5
     dot-prop: ^6.0.1
-    graphql-compose: ^7.25.1
-    graphql-parse-resolve-info: ^4.11.0
+    graphql-compose: ^9.0.2
+    graphql-parse-resolve-info: ^4.12.0
+    graphql-relay: ^0.8.0
     jsonwebtoken: ^8.5.1
     pluralize: ^8.0.0
+    semver: ^7.3.5
   peerDependencies:
     graphql: ^15.0.0
     neo4j-driver: ^4.1.0
-  checksum: 085be87358c9375afbe7f32485e79328853c6f7ef2b031a1a3199ffd97f19e01b94aa1f47fb4c43a2258635107173b504f35deeb14ddb38b87ae5a2eb2737e34
+  checksum: 6b48a50a9fb6cdd0dea20341b22a7a9cf48a29544afa87fe95f36360a7f31189336ce25c3efb20890b642c776b742f5c9fd4e2447a71904aee538d2f38697db5
   languageName: node
   linkType: hard
 
@@ -2014,6 +2017,13 @@ __metadata:
   version: 16.3.2
   resolution: "@types/node@npm:16.3.2"
   checksum: 11896edc7022a40f8938e64f57e497b3110ca732bdef785f86f0a0a819609e9b78ad0c950dcaa59177bc299f2793489b605a3e713cdf7900a39031f0018e2134
+  languageName: node
+  linkType: hard
+
+"@types/object-path@npm:^0.11.0":
+  version: 0.11.1
+  resolution: "@types/object-path@npm:0.11.1"
+  checksum: d0bdb453cb99e741fc99918889b0262e6ba0848b04c5c686f895de2cc22fde99414971adec6f33467a1c6150fcd624f6cc99eccdd47bffee3909f3883ad557d7
   languageName: node
   linkType: hard
 
@@ -4296,15 +4306,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"graphql-compose@npm:^7.25.1":
-  version: 7.25.1
-  resolution: "graphql-compose@npm:7.25.1"
+"graphql-compose@npm:^9.0.2":
+  version: 9.0.2
+  resolution: "graphql-compose@npm:9.0.2"
   dependencies:
+    "@types/object-path": ^0.11.0
     graphql-type-json: 0.3.2
     object-path: 0.11.5
   peerDependencies:
-    graphql: ^14.2.0 || ^15.0.0
-  checksum: 96aa8a6ab9f2c3b2c97747bb2706aeaa4a88d90c10246d0d40caf8936aeea04e61267fb60db2651e59a6665e58a4a52c911259297c005a63900095dd3881e44f
+    graphql: ^14.2.0 || ^15.0.0 || ^16.0.0
+  checksum: 0c5c7967c1e8e6ea4fd7f65fb08212d65ddda980a9321a089599dd7e000b9d53a71be317abe6d16fb4079e6687b95470b383f6670a288322e7d1d16fdfcd2132
   languageName: node
   linkType: hard
 
@@ -4329,7 +4340,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"graphql-parse-resolve-info@npm:^4.11.0":
+"graphql-parse-resolve-info@npm:^4.12.0":
   version: 4.12.0
   resolution: "graphql-parse-resolve-info@npm:4.12.0"
   dependencies:
@@ -4338,6 +4349,15 @@ __metadata:
   peerDependencies:
     graphql: ">=0.9 <0.14 || ^14.0.2 || ^15.4.0"
   checksum: 995f76c99ef02116a802ccc02c64da848ef3facd55d894782a5a93097cf3074dc60bdeca932fa0de2b35b6788b93de504a18def5f5a236a6769ad3435eb6fe4e
+  languageName: node
+  linkType: hard
+
+"graphql-relay@npm:^0.8.0":
+  version: 0.8.0
+  resolution: "graphql-relay@npm:0.8.0"
+  peerDependencies:
+    graphql: 15.5.1
+  checksum: 3986b64ca5126e2ad8cbfaf2c7c64161ce00a8f9832c70e226d096dcb47121a7adc652022a746706527661663537d6f721b313d0ad3ff651c8babe339b5b2469
   languageName: node
   linkType: hard
 
@@ -6501,8 +6521,8 @@ __metadata:
     "@graphql-codegen/cli": ^1.21.7
     "@graphql-codegen/typescript": ^1.23.0
     "@graphql-codegen/typescript-resolvers": ^1.20.0
-    "@neo4j/graphql": ^1.2.2
-    "@neo4j/graphql-ogm": ^1.2.2
+    "@neo4j/graphql": ^2.0.0
+    "@neo4j/graphql-ogm": ^2.0.0
     "@types/bcrypt": ^5.0.0
     "@types/debug": ^4.1.6
     "@types/dotenv": ^8.2.0

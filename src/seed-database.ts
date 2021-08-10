@@ -1,5 +1,5 @@
 import faker from 'faker'
-import { User } from '@issue/graphql/types'
+import type { User } from '@issue/graphql/types'
 import { hashPassword } from '@issue/utils/password'
 import { connect, disconnect, debug } from '@issue/neo4j/database'
 import { ogm } from '@issue/neo4j/graphql'
@@ -32,26 +32,30 @@ export const seed = async () => {
       return {
         name: faker.lorem.word(),
         creator: {
-          connect: { where: { id: user.id } },
+          connect: { where: { node: { id: user.id } } },
         },
         posts: {
           create: new Array(1).fill(null).map(() => ({
-            title: faker.lorem.word(),
-            content: faker.lorem.paragraphs(4),
-            author: {
-              connect: { where: { id: user.id } },
-            },
-            comments: {
-              create: new Array(1).fill(null).map(() => {
-                const u = users[Math.floor(Math.random() * users.length)]
+            node: {
+              title: faker.lorem.word(),
+              content: faker.lorem.paragraphs(4),
+              author: {
+                connect: { where: { node: { id: user.id } } },
+              },
+              comments: {
+                create: new Array(1).fill(null).map(() => {
+                  const u = users[Math.floor(Math.random() * users.length)]
 
-                return {
-                  content: faker.lorem.paragraph(),
-                  author: {
-                    connect: { where: { id: u.id } },
-                  },
-                }
-              }),
+                  return {
+                    node: {
+                      content: faker.lorem.paragraph(),
+                      author: {
+                        connect: { where: { node: { id: u.id } } },
+                      },
+                    },
+                  }
+                }),
+              },
             },
           })),
         },
@@ -69,6 +73,7 @@ const seedDatabase = async () => {
     await disconnect()
   } catch (error) {
     debug(`Error seeding database: ${error.message}`)
+    process.exit(1)
   }
 }
 
