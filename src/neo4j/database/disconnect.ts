@@ -1,5 +1,5 @@
 import { Neo4jError } from 'neo4j-driver'
-import { debug } from '@issue/neo4j/debugger'
+import { debug } from '@issue/neo4j/database/debugger'
 import { driver } from '@issue/neo4j/database/driver'
 
 export const disconnect = async () => {

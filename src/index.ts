@@ -1,5 +1,5 @@
 import { GRAPHQL_PATH, HTTP_HOST_NAME, HTTP_PORT } from '@issue/config'
-import { extendIssueDebugger } from '@issue/debugger'
+import { extendIssueDebugger } from '@issue/utils'
 import { app } from '@issue/express/app'
 import { connect } from '@issue/neo4j/database'
 
