@@ -1,29 +1,16 @@
 import faker from 'faker'
 import { User } from '@issue/graphql/types'
-import { hashPassword } from '@issue/utils'
-import * as neo4j from '@issue/neo4j'
+import { hashPassword } from '@issue/utils/password'
+import { connect, disconnect, debug } from '@issue/neo4j/database'
+import { ogm } from '@issue/neo4j/graphql'
 
-const debug = neo4j.debug.extend('seeder')
+export const seed = async () => {
+  const [User, Blog, Post, Comment] = ['User', 'Blog', 'Post', 'Comment'].map(
+    (name) => ogm.model(name)
+  )
 
-const {
-  database: { connect, disconnect },
-  graphql: { ogm },
-} = neo4j
-
-const User = ogm.model('User')
-const Blog = ogm.model('Blog')
-const Post = ogm.model('Post')
-const Comment = ogm.model('Comment')
-
-const defaultEmail = 'admin@admin.com'
-const defaultPassword = 'password'
-
-const seeder = async () => {
-  debug('Seeding started...')
-
-  await connect()
-
-  await Promise.all([User, Blog, Post, Comment].map((m) => m.delete({})))
+  const defaultEmail = 'admin@admin.com'
+  const defaultPassword = 'password'
 
   const { users } = await User.create<{ users: User[] }>({
     input: await Promise.all(
@@ -48,14 +35,14 @@ const seeder = async () => {
           connect: { where: { id: user.id } },
         },
         posts: {
-          create: new Array(3).fill(null).map(() => ({
+          create: new Array(1).fill(null).map(() => ({
             title: faker.lorem.word(),
             content: faker.lorem.paragraphs(4),
             author: {
               connect: { where: { id: user.id } },
             },
             comments: {
-              create: new Array(3).fill(null).map(() => {
+              create: new Array(1).fill(null).map(() => {
                 const u = users[Math.floor(Math.random() * users.length)]
 
                 return {
@@ -71,10 +58,18 @@ const seeder = async () => {
       }
     }),
   })
-
-  await disconnect()
-
-  debug('Seeding Finished')
 }
 
-seeder()
+const seedDatabase = async () => {
+  try {
+    await connect()
+    debug('Seeding started...')
+    await seed()
+    debug('Seeding Finished')
+    await disconnect()
+  } catch (error) {
+    debug(`Error seeding database: ${error.message}`)
+  }
+}
+
+seedDatabase()
