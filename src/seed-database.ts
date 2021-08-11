@@ -1,7 +1,12 @@
 import faker from 'faker'
 import type { User } from '@issue/graphql/types'
 import { hashPassword } from '@issue/utils/password'
-import { connect, disconnect, debug } from '@issue/neo4j/database'
+import {
+  clearDatabase,
+  connect,
+  disconnect,
+  debug,
+} from '@issue/neo4j/database'
 import { ogm } from '@issue/neo4j/graphql'
 
 export const seed = async () => {
@@ -67,6 +72,7 @@ export const seed = async () => {
 const seedDatabase = async () => {
   try {
     await connect()
+    await clearDatabase()
     debug('Seeding started...')
     await seed()
     debug('Seeding Finished')

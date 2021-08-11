@@ -6,7 +6,7 @@ export const connect = async () => {
   try {
     debug('Connecting...')
     const info = await driver.verifyConnectivity()
-    debug(`Database v.${info.version} connected at ${info.address}`)
+    debug(`Connected: ${info.version} at ${info.address}`)
     return info
   } catch (error) {
     if (error instanceof Neo4jError) {
