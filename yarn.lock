@@ -1647,24 +1647,24 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@neo4j/graphql-ogm@npm:^2.2.0":
-  version: 2.2.0
-  resolution: "@neo4j/graphql-ogm@npm:2.2.0"
+"@neo4j/graphql-ogm@npm:^2.3.0":
+  version: 2.3.0
+  resolution: "@neo4j/graphql-ogm@npm:2.3.0"
   dependencies:
     "@graphql-tools/merge": 6.2.14
-    "@neo4j/graphql": ^2.2.0
+    "@neo4j/graphql": ^2.3.0
     camelcase: ^6.2.0
     pluralize: ^8.0.0
   peerDependencies:
     graphql: ^15.0.0
     neo4j-driver: ^4.1.0
-  checksum: c94f5f2888483400b6fe9cd4985ebfe7610a2af88233627aa1f2f40ab5fab9311a4295839e41ddb626989239811c811956fd2f6d4476981a9e2e6f12a787c688
+  checksum: 05a47777a637abbd2e01f7c703d1a0f98567560d6138bab1f34c2b022a019dd00755b59b0d5e7417487a58a9ff307ddc54ecc6e1520b21fcef5aef87b7f536d5
   languageName: node
   linkType: hard
 
-"@neo4j/graphql@npm:^2.2.0":
-  version: 2.2.0
-  resolution: "@neo4j/graphql@npm:2.2.0"
+"@neo4j/graphql@npm:^2.3.0":
+  version: 2.3.0
+  resolution: "@neo4j/graphql@npm:2.3.0"
   dependencies:
     "@graphql-tools/merge": 6.2.14
     "@graphql-tools/schema": ^7.1.5
@@ -1682,7 +1682,7 @@ __metadata:
   peerDependencies:
     graphql: ^15.0.0
     neo4j-driver: ^4.1.0
-  checksum: 5e094f58e06c65eafc6b1e4414681cb61626e575193179fbabdba7c421a50f2754700c1bc8b853c75d459e518001a1a4866ac3cf5afbc91e20d85a33f5eb0875
+  checksum: 740928a03cc91e55e3e7ef930778914d9566fea9d74a52ae7a5d673d7d753d70afeb2661365339005e7ebdca89e6b6dc46502605227bf0b57a2b6f3a6b984de1
   languageName: node
   linkType: hard
 
@@ -4403,10 +4403,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"graphql@npm:^15.5.3":
-  version: 15.5.3
-  resolution: "graphql@npm:15.5.3"
-  checksum: 2538efd61b5e1317cfaba796685412aa45f97504002af823a0d0682f8a60f4698343f8ba2793c83c276c76a6b14d8301e58b9f8ad7b61191c380d48e274e6b4d
+"graphql@npm:^16.0.1":
+  version: 16.0.1
+  resolution: "graphql@npm:16.0.1"
+  checksum: df15f4ff8fb99bb70c92e484ee2d1e33d24efda2dfcaceedd829f9bce73c6e2ead878aff5ebc5ecf812df302eb2f80c013c59def9d833fcb591ab337df495431
   languageName: node
   linkType: hard
 
@@ -6485,32 +6485,32 @@ __metadata:
   languageName: node
   linkType: hard
 
-"neo4j-driver-bolt-connection@npm:^4.3.3":
-  version: 4.3.3
-  resolution: "neo4j-driver-bolt-connection@npm:4.3.3"
+"neo4j-driver-bolt-connection@npm:^4.3.4":
+  version: 4.3.4
+  resolution: "neo4j-driver-bolt-connection@npm:4.3.4"
   dependencies:
-    neo4j-driver-core: ^4.3.3
+    neo4j-driver-core: ^4.3.4
     text-encoding-utf-8: ^1.0.2
-  checksum: aabcb4c18527a4c8ee3493ba7c36f2a13549eff1160d605071d9b61d5fa736be684cb35f524d5424f28afaf5218f72c765c7c5b3c3b8b961eda1d4c5131a8d80
+  checksum: cc785a548e2cf571d19e35417aad3928d9a63cfe1889c480d699b75dc9f7b6c96b03fbabf3752a778b9f82e74f455199cdc9a26d09beff4d354626d781cd3bd6
   languageName: node
   linkType: hard
 
-"neo4j-driver-core@npm:^4.3.3":
-  version: 4.3.3
-  resolution: "neo4j-driver-core@npm:4.3.3"
-  checksum: f0e3851b4d7e654abbdaa834c9f733756ccf153a9b8f4118a79fec13aa43e23458aa472035994c4cd62726bdf63bb3d32d50ac93d4cf1bc8ae2908492d2a451e
+"neo4j-driver-core@npm:^4.3.4":
+  version: 4.3.4
+  resolution: "neo4j-driver-core@npm:4.3.4"
+  checksum: ce22cc6453a0ffaa9fb34ffd761d69ce05d3c0f2502158110ef6aad0f1d094bbdeaa09991cfe535e1c7d044bd50d9f51748999ef32a754b17f8d1353c3b5274c
   languageName: node
   linkType: hard
 
-"neo4j-driver@npm:^4.3.3":
-  version: 4.3.3
-  resolution: "neo4j-driver@npm:4.3.3"
+"neo4j-driver@npm:^4.3.4":
+  version: 4.3.4
+  resolution: "neo4j-driver@npm:4.3.4"
   dependencies:
     "@babel/runtime": ^7.5.5
-    neo4j-driver-bolt-connection: ^4.3.3
-    neo4j-driver-core: ^4.3.3
+    neo4j-driver-bolt-connection: ^4.3.4
+    neo4j-driver-core: ^4.3.4
     rxjs: ^6.6.3
-  checksum: c002cc12ecc2915de1a38203058b81e475a68ed220b3ef85acd55fe11a18f5149b9004a2d6b595ae7179a174e7f2b900ce839fc1603c97f6c4ea2a75e91d04bb
+  checksum: 6e9832431caa7893acfa765a03ccaa69c86c3a751bb3db46ab94b3778749595fcfd89de8c635954869cf946c1b11dc773808ac079f91835b03e1ef56a0a7c220
   languageName: node
   linkType: hard
 
@@ -6521,8 +6521,8 @@ __metadata:
     "@graphql-codegen/cli": ^1.21.7
     "@graphql-codegen/typescript": ^1.23.0
     "@graphql-codegen/typescript-resolvers": ^1.20.0
-    "@neo4j/graphql": ^2.2.0
-    "@neo4j/graphql-ogm": ^2.2.0
+    "@neo4j/graphql": ^2.3.0
+    "@neo4j/graphql-ogm": ^2.3.0
     "@types/bcrypt": ^5.0.0
     "@types/debug": ^4.1.6
     "@types/dotenv": ^8.2.0
@@ -6538,11 +6538,11 @@ __metadata:
     express: ^4.17.1
     express-graphql: ^0.12.0
     faker: ^5.5.3
-    graphql: ^15.5.3
+    graphql: ^16.0.1
     graphql-tag: ^2.12.5
     jest: ^27.0.6
     jsonwebtoken: ^8.5.1
-    neo4j-driver: ^4.3.3
+    neo4j-driver: ^4.3.4
     nodemon: ^2.0.12
     prettier: ^2.3.2
     ts-jest: ^27.0.4
