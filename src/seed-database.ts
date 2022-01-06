@@ -17,7 +17,7 @@ export const seed = async () => {
   const defaultEmail = 'admin@admin.com'
   const defaultPassword = 'password'
 
-  const { users } = await User.create<{ users: User[] }>({
+  const { users } = await User.create({
     input: await Promise.all(
       [
         [defaultEmail, defaultPassword],
@@ -33,7 +33,7 @@ export const seed = async () => {
   })
 
   await Blog.create({
-    input: users.map((user) => {
+    input: users.map((user: User) => {
       return {
         name: faker.lorem.word(),
         creator: {
