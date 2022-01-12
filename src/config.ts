@@ -2,7 +2,7 @@ import 'dotenv/config'
 
 export const {
   HTTP_HOST_NAME = 'localhost',
-  HTTP_PORT = 4000,
+  HTTP_PORT = 4001,
   GRAPHQL_PATH = '/graphql',
   NODE_ENV = 'development',
   NEO4J_GRAPHQL_JWT_SECRET = 'secret',
