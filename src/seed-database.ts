@@ -10,6 +10,7 @@ import {
 import { ogm } from '@issue/neo4j/graphql'
 
 export const seed = async () => {
+  await ogm.init()
   const [User, Blog, Post, Comment] = ['User', 'Blog', 'Post', 'Comment'].map(
     (name) => ogm.model(name)
   )
