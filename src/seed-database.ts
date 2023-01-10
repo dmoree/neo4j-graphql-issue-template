@@ -1,4 +1,4 @@
-import faker from 'faker'
+import { faker } from '@faker-js/faker'
 import type { User } from '@issue/graphql/types'
 import { hashPassword } from '@issue/utils/password'
 import {

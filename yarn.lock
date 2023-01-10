@@ -1213,6 +1213,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@faker-js/faker@npm:^7.6.0":
+  version: 7.6.0
+  resolution: "@faker-js/faker@npm:7.6.0"
+  checksum: 1967611685b17f52d945785c4d8cb998e8fb4ab4d7aefb0c783e8061301952cd4dc09c60f088ad6e286dfe1ee916d83781b911a14a6356aa122c283a2d177b16
+  languageName: node
+  linkType: hard
+
 "@graphql-codegen/cli@npm:^1.21.7":
   version: 1.21.7
   resolution: "@graphql-codegen/cli@npm:1.21.7"
@@ -2333,13 +2340,6 @@ __metadata:
     "@types/qs": "*"
     "@types/serve-static": "*"
   checksum: 9f17da703df21e3f1cee2fe1864b9fcac2ab07c37382b972a194a3a484b41c1fbe4022b6cfe546f0171fd2d93b324dd3839512494f4cba639c2afa021e6dbb12
-  languageName: node
-  linkType: hard
-
-"@types/faker@npm:^5":
-  version: 5.5.7
-  resolution: "@types/faker@npm:5.5.7"
-  checksum: 27cce2c2f4843cae730a9a1dbb2ec695d1c24c893ea4ef4a5208b897931afce211802b3e01f86bdf6660124ca102c9abab9b5b101295082342bf27e80a9e4f18
   languageName: node
   linkType: hard
 
@@ -4494,13 +4494,6 @@ __metadata:
   version: 9.0.0
   resolution: "extract-files@npm:9.0.0"
   checksum: 021b10787718a2f81847e58bd5eea3b09d636e8bb3cf281dad2aeeafc439c32f9e7d2353b2b4b30f6a7febf93be9d1edd76706ea56cff6850b3f39e1594e5bb3
-  languageName: node
-  linkType: hard
-
-"faker@npm:^6.6.6":
-  version: 6.6.6
-  resolution: "faker@npm:6.6.6"
-  checksum: 7f13eb50ed23d4b69217bcc839c510e71e5379f76151182ad7157f1e2cd65520e01d4a4cd156464f649d9fb02568fbec6d8c0481f84df358281200ccd4bc59e8
   languageName: node
   linkType: hard
 
@@ -7132,6 +7125,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "neo4j-graphql-issue-template@workspace:."
   dependencies:
+    "@faker-js/faker": ^7.6.0
     "@graphql-codegen/cli": ^1.21.7
     "@graphql-codegen/typescript": ^1.23.0
     "@graphql-codegen/typescript-resolvers": ^1.20.0
@@ -7141,7 +7135,6 @@ __metadata:
     "@types/debug": ^4.1.6
     "@types/dotenv": ^8.2.0
     "@types/express": ^4.17.13
-    "@types/faker": ^5
     "@types/jest": ^26.0.24
     "@types/jsonwebtoken": ^8.5.4
     "@types/node": ^16.3.2
@@ -7151,7 +7144,6 @@ __metadata:
     dotenv: ^16.0.3
     express: ^4.18.2
     express-graphql: ^0.12.0
-    faker: ^6.6.6
     graphql: ^16.6.0
     graphql-tag: ^2.12.6
     jest: ^27.0.6
