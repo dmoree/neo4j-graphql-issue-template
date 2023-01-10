@@ -14,15 +14,15 @@
   "dependencies": {
     "@neo4j/graphql": "^3.14.2",
     "@neo4j/graphql-ogm": "^3.14.2",
-    "bcrypt": "^5.0.1",
-    "debug": "^4.3.2",
-    "dotenv": "^10.0.0",
-    "express": "^4.17.1",
+    "bcrypt": "^5.1.0",
+    "debug": "^4.3.4",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
     "express-graphql": "^0.12.0",
-    "graphql": "^16.3.0",
+    "graphql": "^16.6.0",
     "graphql-tag": "^2.12.6",
     "jsonwebtoken": "^8.5.1",
-    "neo4j-driver": "^4.4.4"
+    "neo4j-driver": "^5.4.0"
   },
   "devDependencies": {
     "@graphql-codegen/cli": "^1.21.7",
@@ -37,7 +37,7 @@
     "@types/jsonwebtoken": "^8.5.4",
     "@types/node": "^16.3.2",
     "@types/prettier": "^2",
-    "faker": "^5.5.3",
+    "faker": "^6.6.6",
     "jest": "^27.0.6",
     "nodemon": "^2.0.12",
     "prettier": "^2.3.2",
