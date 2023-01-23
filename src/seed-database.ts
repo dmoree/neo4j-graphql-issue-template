@@ -79,7 +79,9 @@ const seedDatabase = async () => {
     debug('Seeding Finished')
     await disconnect()
   } catch (error) {
-    debug(`Error seeding database: ${error.message}`)
+    if (error instanceof Error) {
+      debug(`Error seeding database: ${error.message}`)
+    }
     process.exit(1)
   }
 }

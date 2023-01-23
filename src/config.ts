@@ -5,8 +5,9 @@ export const {
   HTTP_PORT = 4001,
   GRAPHQL_PATH = '/graphql',
   NODE_ENV = 'development',
-  NEO4J_GRAPHQL_JWT_SECRET = 'secret',
+  NEO4J_GRAPHQL_JWT_SECRET = 'super-secret',
   NEO4J_URL = 'neo4j://localhost:7687/neo4j',
   NEO4J_USER = 'neo4j',
   NEO4J_PASSWORD = 'password',
+  NEO4J_DB = 'neo4j',
 } = process.env

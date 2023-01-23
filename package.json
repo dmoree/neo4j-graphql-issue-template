@@ -14,6 +14,7 @@
   "dependencies": {
     "@neo4j/graphql": "^3.14.2",
     "@neo4j/graphql-ogm": "^3.14.2",
+    "@neo4j/graphql-plugin-auth": "^2.0.0",
     "bcrypt": "^5.1.0",
     "debug": "^4.3.4",
     "dotenv": "^16.0.3",
